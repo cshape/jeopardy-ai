@@ -1,0 +1,51 @@
+.score-board {
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* Allow shrinking as needed */
+  overflow-y: auto; /* Allow scrolling within score board if needed */
+  padding: 15px;
+}
+
+.score-board h2 {
+  text-align: center;
+  color: #F7D74A;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #F7D74A;
+  padding-bottom: 10px;
+  flex-shrink: 0; /* Prevent the header from shrinking */
+}
+
+.player-scores {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.player-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.player-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.score {
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: #F7D74A;
+  font-weight: bold;
+}
+
+/* Chat section styles */
+.chat-section {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+} 

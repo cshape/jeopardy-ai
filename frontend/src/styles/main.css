@@ -1,0 +1,120 @@
+/* Import the layout CSS */
+@import './layout.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 
+ * Removing duplicate definition since it's defined in GameBoard.css
+ * and causing grid conflicts
+ */
+/* 
+.jeopardy-board {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+*/
+
+/* 
+ * Commenting out duplicated GameBoard styles that are defined in component-specific CSS files
+ */
+
+/*
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-title {
+  background-color: #060CE9;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.question {
+  background-color: #060CE9;
+  color: #F7D74A;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.question.used {
+  background-color: #1E1E1E;
+  color: #666;
+  cursor: not-allowed;
+}
+*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #060CE9;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 80%;
+  text-align: center;
+}
+
+.clue {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.answer {
+  font-size: 24px;
+  color: #F7D74A;
+  margin-top: 20px;
+}
+
+/* Admin controls styles moved to AdminControls.css */ 

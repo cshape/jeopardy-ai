@@ -1,0 +1,346 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #060CE9;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 80%;
+  width: 800px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 30px rgba(247, 215, 74, 0.3);
+}
+
+.modal-content .value {
+  font-size: 2rem;
+  color: #F7D74A;
+  margin-bottom: 1rem;
+}
+
+.modal-content .category {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.modal-content .clue {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.modal-content .answer {
+  font-size: 2rem;
+  color: #F7D74A;
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+.modal-content .controls {
+  margin-top: 2rem;
+}
+
+.modal-content button {
+  background-color: #F7D74A;
+  color: #060CE9;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-content button:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+}
+
+/* Player registration form styles */
+.player-name-input, .player-preferences-input {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: none;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.join-game-button {
+  margin-top: 10px;
+  width: 60%;
+}
+
+.buzzer-status {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.buzzer-status.active {
+  background-color: #28a745;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.buzzer-control {
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  font-size: 1.2em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.buzzer-control:not(.active) {
+  background-color: #f44336;
+  color: white;
+}
+
+.buzzer-control.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.player-buzzer {
+  padding: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.player-buzzer:not(.active) {
+  background-color: #f44336;
+  color: white;
+}
+
+.player-buzzer.active {
+  background-color: #4caf50;
+  color: white;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.daily-double-banner {
+  background-color: #FFDD00;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  animation: pulse 1.5s infinite;
+}
+
+.daily-double h2 {
+  color: #FFDD00;
+  font-size: 32px;
+  animation: pulse 1.5s infinite;
+  text-align: center;
+}
+
+.daily-double form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.daily-double select,
+.daily-double input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #3a3a3a;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+}
+
+.daily-double input[type="number"] {
+  width: 100%;
+}
+
+.daily-double form button {
+  background-color: #FFDD00;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.daily-double form button:hover {
+  background-color: #FFE959;
+}
+
+.show-question-btn {
+  background-color: #FFDD00 !important;
+  color: black !important;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 20px !important;
+  margin-top: 15px;
+  animation: pulse 1.5s infinite;
+  border: none !important;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.show-question-btn:hover {
+  background-color: #FFE959 !important;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Admin form styles moved to AdminControls.css */
+
+/* Form styles for daily double bet */
+.admin-controls form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.admin-controls select,
+.admin-controls input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.admin-controls form button {
+  padding: 10px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-controls form button:hover {
+  background-color: #3367d6;
+}
+
+/* Timer styles */
+.timer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.timer-bar {
+  height: 100%;
+  background-color: #FFDD00;
+  transition: width 0.05s linear;
+}
+
+/* Answer timer - show at the top of the modal */
+.timer-container.answer-timer {
+  top: 0;
+  bottom: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.timer-bar.answer {
+  background-color: #FFDD00; /* Same yellow color for consistency */
+}
+
+/* Styling for the player answering info */
+.player-answering {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.player-answering p {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+.answer-prompt {
+  color: #FFDD00;
+  font-weight: bold;
+  font-size: 1.3em !important;
+  animation: pulse 1.5s infinite;
+} 

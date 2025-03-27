@@ -1,0 +1,24 @@
+.player-scores {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.player-score {
+  background-color: #060CE9;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.player-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.score {
+  font-size: 2rem;
+  color: #F7D74A;
+  font-weight: bold;
+} 

@@ -1,0 +1,131 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.admin-bar {
+  background-color: #333;
+  padding: 10px;
+  border-bottom: 2px solid #F7D74A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-bar .admin-controls {
+  flex: 1;
+  background: transparent;
+  padding: 0.5rem;
+}
+
+.admin-indicator {
+  background-color: #F7D74A;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  height: calc(100vh - 50px); /* Adjust for any headers */
+}
+
+.board-container {
+  flex: 3;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Never scroll */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.score-container {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: #060CE9;
+  border-left: 2px solid #F7D74A;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.waiting-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.waiting-screen h2 {
+  color: #F7D74A;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.waiting-screen p {
+  text-align: center;
+  width: 100%;
+}
+
+.current-players {
+  margin-top: 30px;
+  background-color: rgba(6, 12, 233, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.current-players h3 {
+  color: #F7D74A;
+  margin-bottom: 15px;
+}
+
+.current-players ul {
+  list-style: none;
+  padding: 0;
+}
+
+.current-players li {
+  background-color: #060CE9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Make sure the modal overlays the board properly */
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+} 
